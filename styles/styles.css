@@ -33,7 +33,7 @@ main {
 aside {
     width: 20rem;
     margin: 1px;
-    border: 1px solid rgb(0 0 0/0.2);
+    border: 1px solid;
     padding: 25px;
     background-color: #1b4d3e;
     color: #ffffff;
