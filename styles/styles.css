@@ -6,10 +6,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* 2. Navigation bar */
-nav {
+/* 2. Navigation bar (header only) */
+header nav {
     background-color: #0b3d91;
-    /* darker professional blue */
     display: flex;
     justify-content: center;
     gap: 1.5rem;
@@ -17,7 +16,7 @@ nav {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
+header nav a {
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
@@ -25,7 +24,7 @@ nav a {
     transition: background 0.3s, color 0.3s;
 }
 
-nav a:hover {
+header nav a:hover {
     background-color: #ffffff;
     color: #0b3d91;
     border-radius: 5px;
@@ -50,11 +49,12 @@ p {
 main {
     max-width: 700px;
     margin: 1rem auto;
-    padding: 0 1rem;
+    padding: 1rem;
     background-color: #f4f4f4;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    /* contains the float */
 }
 
 /* 6. Floated profile image */
@@ -64,23 +64,16 @@ main img {
     border-radius: 50%;
     border: 3px solid #0b3d91;
     float: right;
-    margin-left: 1rem;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 0 1rem 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* 7. Aside styling */
+/* 7. Aside styling (keep only what is unique; box does the rest) */
 aside {
     width: 20rem;
     margin: 1rem auto;
-    padding: 25px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #1b4d3e;
-    color: #ffffff;
-    text-align: left;
-    border-radius: 8px;
     position: relative;
     /* for heading overlay */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Overlay heading inside aside */
@@ -100,6 +93,7 @@ aside img {
     height: auto;
     border-radius: 8px;
     margin-top: 3rem;
+    display: block;
 }
 
 /* 8. Footer styling */
@@ -112,10 +106,9 @@ footer {
     background-color: #f0f0f0;
 }
 
-/* 9. Class Selectors */
-/* Box class for reusable boxes (aside and ul) */
+/* =============== Class Selectors =============== */
 .box {
-    margin: 1rem 0;
+    margin: 1rem;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #ddd;
